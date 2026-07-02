@@ -138,6 +138,7 @@ footer {
 }
 </style>
 </head>
+
 <body>
 
 <header>
@@ -148,8 +149,8 @@ footer {
         <a href="#team">Команда</a>
         <a href="#contacts">Контакты</a>
         <a href="elua.html">EULA</a>
-        <a href="#api.html">API</a>
-        <a href="#server API">Server API</a>
+        <a href="#api">API</a>
+        <a href="#server-api">Server API</a>
     </nav>
 </header>
 
@@ -164,7 +165,7 @@ footer {
         <a class="btn" href="https://t.me/highland_games" target="_blank">Telegram канал</a>
         <a class="btn" href="https://t.me/developover" target="_blank">Помогать разработке</a>
         <a class="btn" href="https://github.com/yappertarai-commits/Minecraft-clone/releases" target="_blank">GitHub</a>
-        <a class="btn" href="realeses.html">Релизы</a>
+        <a class="btn" href="releases.html">Релизы</a>
         <a class="btn" href="elua.html">Читать EULA</a>
     </div>
 </section>
@@ -174,16 +175,7 @@ footer {
     <p>
         HighLand Games — молодая команда разработчиков,
         художников и энтузиастов. Мы создаём игры, экспериментируем
-        с механиками и строим свои проекты с нуля. <br>
-        Наша цель создать пусть и не самые топовые,
-        но классные игры. <br>
-        Мы будем делать игровой API для модификаций и даже оставим документцаю к нему. <br>
-        Игра будет специализирована на графике Minecraft и стратегии. <br>
-        Мы поднимем пару официальных серверов и игроки тоже смогут поднимать свои. <br>
-        Разные жанры, включая сражения, эпик и прочий экшн. <br>
-        Музыкальная часть от <a href="https://t.me/Psych0dr1ve">Psych0dr1ve</a>!<br>
-        Владелец компании >> <a href="https://t.me/developover">тут</a>! <br>
-        сновано 29 июля 2026.
+        с механиками и строим свои проекты с нуля.
     </p>
 </section>
 
@@ -193,23 +185,6 @@ footer {
         Первая игра HighLand Games уже в разработке.
         Первые версии можно найти на GitHub!
     </p>
-
-    <div class="cards">
-        <div class="card">
-            <h3>Открытый мир</h3>
-            <p>Большой процедурно генерируемый мир для исследования.</p>
-        </div>
-
-        <div class="card">
-            <h3>Строительство</h3>
-            <p>Разрушай, строй и создавай собственные структуры.</p>
-        </div>
-
-        <div class="card">
-            <h3>Скоро релиз</h3>
-            <p>Игра активно разрабатывается. Уже доступны тестовые билды, на С++ самые лучшие.</p>
-        </div>
-    </div>
 </section>
 
 <section class="section" id="team">
@@ -245,74 +220,64 @@ footer {
 
 <section class="section" id="eula">
     <h2>Лицензионное соглашение (EULA)</h2>
+
     <div class="card" style="margin-top: 20px;">
         <h3>Пользовательское соглашение</h3>
 
         <p>
-            Используя игру HighLand Games, вы принимаете условия настоящего лицензионного соглашения.
+            Используя игру HighLand Games, вы принимаете условия лицензионного соглашения.
         </p>
 
         <p>
-            Игра предоставляется по лицензии для личного некоммерческого использования.
-            Все права на игру, включая исходный код, графические материалы, звуковое сопровождение и дизайн, принадлежат HighLand Games.
+            Игра предоставляется для личного некоммерческого использования.
+            Все права принадлежат HighLand Games.
         </p>
 
         <p><strong>Запрещается:</strong></p>
 
         <ul style="margin-left: 20px; margin-top: 10px; color: #d1d5db;">
-            <li>продавать или распространять игру без письменного разрешения правообладателя;</li>
-            <li>взламывать, декомпилировать, дизассемблировать или использовать читы;</li>
-            <li>выдавать игру за собственную разработку;</li>
-            <li>распространять модифицированные версии игры без согласия разработчиков.</li>
+            <li>продавать игру без разрешения;</li>
+            <li>взламывать или использовать читы;</li>
+            <li>выдавать игру за свою;</li>
+            <li>распространять модификации без согласия.</li>
         </ul>
 
         <p style="margin-top: 15px;">
-            Игра может содержать ошибки, так как находится на стадии разработки (альфа- или бета-версии).
-            Мы не гарантируем отсутствие багов или стабильную работу всех функций.
-        </p>
-
-        <p>
-            Разработчики оставляют за собой право выпускать обновления, изменять или отключать любые функции игры в любое время без предварительного уведомления.
+            Игра находится в разработке и может содержать ошибки.
         </p>
 
         <p style="margin-top: 15px; color: #93c5fd;">
-            Полный текст лицензионного соглашения доступен в Telegram.<br>
-            <a href="https://t.me/highland_games/6" target="_blank" rel="noopener noreferrer">Полная версия EULA</a>
+            Полная версия: <a href="https://t.me/highland_games/6" target="_blank">EULA в Telegram</a>
         </p>
     </div>
 </section>
 
-<section class="section" id="server API">
-    <h2 style="margin-top: 15 px; color: #93c5fd;"2>Мультиплеер</h2>
-        <div class="card" style="margin-top: 15px; color: #ffffff;">
-            <h3>Server API</h3>
-            <p>
-                На С++ версии серверы запускаем через server.exe, а плагины в EXE-файлах. <br>
-                На Java версии запускаем серверы через server.jar, а плагины в AR-файлах.
-            </p>
+<section class="section" id="server-api">
+    <h2>Мультиплеер</h2>
+
+    <div class="card">
+        <h3>Server API</h3>
+        <p>
+            На C++ версии серверы запускаются через server.exe, плагины через EXE.<br>
+            На Java версии — server.jar и плагины AR.
+        </p>
     </div>
 </section>
-
 
 <section class="section" id="api">
     <h2>API</h2>
 
-    <div class="card" style="margin-top: 20px;">
+    <div class="card">
         <h3>GameAPI</h3>
-        <p>
-            Сейчас активно ведется разработка GameAPI! Скоро тут будет документация.
-        </p>
-
+        <p>Скоро будет документация GameAPI.</p>
         <p style="margin-top: 15px;">
-            GameAPI - это наш игровой API для разработчиков.
             <a class="btn" href="blank.html">Читать больше...</a>
         </p>
     </div>
 </section>
-    
+
 <footer>
-    © 2026 "HighLand Games". Все права защищены. <br>
-    Копирование не приветствуется.
+    © 2026 HighLand Games. Все права защищены.
 </footer>
 
 </body>
