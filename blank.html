@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HighLand Games — EULA</title>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #181f34;
+            color: #f0f4ff;
+            line-height: 1.7;
+        }
+
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #1f2937, #111827);
+            padding: 18px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #375790;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+
+        .logo {
+            font-size: 26px;
+            font-weight: 700;
+            color: #60a5fa;
+            letter-spacing: 0.5px;
+        }
+        .logo span {
+            color: #93c5fd;
+            font-weight: 300;
+        }
+
+
+        nav a {
+            color: #d1d5db;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+
+        /* Hero */
+        .hero {
+            min-height: 40vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px 20px 40px;
+            background:
+                linear-gradient(rgba(15,17,23,0.7), rgba(15,17,23,0.85)),
+                url('https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1920');
+            background-size: cover;
+            background-position: center;
+            border-bottom: 2px solid #2d4a7a;
+        }
+
+
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 12px;
+            color: #60a5fa;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+        }
+        .hero p {
+            font-size: 20px;
+            max-width: 700px;
+            color: #d1d5db;
+        }
+
+
+        /* Sections */
+        .section {
+            padding: 60px 40px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+
+        .section h2 {
+            font-size: 38px;
+            margin-bottom: 25px;
+            color: #60a5fa;
+            border-left: 6px solid #2563eb;
+            padding-left: 20px;
+        }
+
+
+        .card {
+            background: #1f2937;
+            padding: 35px 40px;
+            border-radius: 16px;
+            border: 1px solid #374151;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+        }
+
+
+        .card .meta {
+            color: #9ca3af;
+            font-size: 15px;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #374151;
+        }
+        .card .meta strong {
+            color: #93c5fd;
+        }
+
+
+        .eula-point {
+            margin-top: 28px;
+        }
+        .eula-point:first-of-type {
+            margin-top: 0;
+        }
+
+
+        .eula-point h4 {
+            font-size: 20px;
+            color: #93c5fd;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .eula-point h4 .num {
+            display: inline-block;
+            background: #2563eb;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 700;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            flex-shrink: 0;
+        }
+
+
+        .eula-point ul {
+            margin: 8px 0 0 28px;
+            color: #d1d5db;
+            list-style: none;
+        }
+        .eula-point ul li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 4px;
+        }
+        .eula-point ul li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #60a5fa;
+        }
+
+
+        .eula-point p {
+            margin-top: 8px;
+            color: #e5e7eb;
+        }
+
+
+        .eula-point .highlight {
+            color: #fbbf24;
+            font-weight: 500;
+        }
+
+
+        .card .footer-note {
+            margin-top: 35px;
+            padding-top: 20px;
+            border-top: 1px solid #374151;
+            color: #9ca3af;
+            font-size: 15px;
+            text-align: center;
+        }
+        .card .footer-note a {
+            color: #60a5fa;
+            text-decoration: none;
+            border-bottom: 1px dotted #60a5fa;
+        }
+        .card .footer-note a:hover {
+            border-bottom: 1px solid;
+        }
+
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            border-top: 1px solid #2d3748;
+            color: #9ca3af;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 36px; }
+            .section { padding: 40px 20px; }
+            .card { padding: 25px 20px; }
+            .eula-point h4 { font-size: 18px; }
+            header { flex-wrap: wrap; gap: 10px; }
+            nav a { margin-left: 15px; font-size: 14px; }
+        }
+    </style>
+</head>
+<body>
+       <header>
+       <div class="logo">HighLand <span>Games</span></div>
+       </header>
+
+    <section class="hero">
+       <h1>Упс! Произошла ошибка!</h1>
+       <p>Код ошибки: 012-345-679-234-253. <br>
+        Она значит то, что эта страница ещё недоступна. <br>
+    GameAPI ещё в разработке. Следите за обновлениями. <br>
+    Похоже - это всё, что нам известно.</p>
+   </section>
+</body>
+</html>
